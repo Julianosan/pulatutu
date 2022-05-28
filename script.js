@@ -19,7 +19,7 @@ const loop = setInterval(() => {
     const dinoPosition = dino.offsetLeft
     const tutuPosition = +window.getComputedStyle(tutu).bottom.replace('px', '')
 
-    if (dinoPosition <= 290 && dinoPosition > 200 && tutuPosition < 80){
+    if (dinoPosition <= 80 && dinoPosition > 0 && tutuPosition < 80){
         
         dino.style.animation = 'none'
         dino.style.left = `${dinoPosition}px`
@@ -29,7 +29,7 @@ const loop = setInterval(() => {
 
         tutu.src = 'tutu-gameover.png'
         tutu.style.width = '80px'
-        tutu.style.marginLeft = '220px'
+        tutu.style.marginLeft = '20px'
 
         clearInterval(loop)
 

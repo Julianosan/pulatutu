@@ -32,7 +32,6 @@
     position: absolute;
     width: 100px;
     bottom: 0;
-    margin-left: 200px;
 }
 
 .jump {
@@ -41,7 +40,7 @@
 
 @keyframes dino-animation {
     from {
-        right: -100px;
+        right: -80px;
     } to {
         right: 100%;
     }
