@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,12 +21,6 @@
     animation: nv-animation 20s infinite linear;
 }
 
-.dino {
-    position: absolute;
-    bottom: 0;
-    width: 40px;
-    animation: dino-animation 1.5s infinite linear;
-}
 
 .tutu {
     position: absolute;
@@ -36,6 +30,13 @@
 
 .jump {
     animation: jump 500ms ease-out;
+}
+
+.dino {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    animation: dino-animation 1.5s infinite linear;
 }
 
 @keyframes dino-animation {
