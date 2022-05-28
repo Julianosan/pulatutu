@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#e4e4e4, #FFFFFF)
+}
+
+.nuvem {
+    position: absolute;
+    width: 500px;
+    margin-top: 50px;
+    animation: nv-animation 20s infinite linear;
+}
+
+.dino {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: dino-animation 2s infinite linear;
+}
+
+.tutu {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    margin-left: 200px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes dino-animation {
+    from {
+        right: -100px;
+    } to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 220px;
+    }
+
+    50% {
+        bottom: 220px;
+    }
+
+    60% {
+        bottom: 220px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes nv-animation {
+    from {
+        right: -500px;
+    } to {
+        right: 100%;
+    }
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgb(15, 146, 44) 0%, 
+          rgb(56, 196, 109) 25%, 
+          rgb(166, 248, 170) 51%, 
+          rgb(227, 255, 221) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+  }
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
