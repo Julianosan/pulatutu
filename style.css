@@ -5,7 +5,7 @@
 }
 
 .game-board {
-    width: 80%;
+    width: 100%;
     height: 500px;
     border-bottom: 15px solid rgb(35, 160, 35);
     margin: 0 auto;
@@ -24,13 +24,13 @@
 .dino {
     position: absolute;
     bottom: 0;
-    width: 80px;
-    animation: dino-animation 2s infinite linear;
+    width: 40px;
+    animation: dino-animation 1.5s infinite linear;
 }
 
 .tutu {
     position: absolute;
-    width: 100px;
+    width: 50px;
     bottom: 0;
 }
 
